@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tabbar.Profile"
+    android:layout_marginHorizontal="20dp"
+    android:orientation="vertical"
+    android:layout_marginTop="40dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/avatar"
+            android:scaleType="fitCenter"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/userId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textSize="35sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="作者"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/toLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登录"
+        android:background="@drawable/button_warning"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        />
+
+</LinearLayout>
